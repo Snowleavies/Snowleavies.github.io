@@ -1,7 +1,7 @@
 // 代码块一键复制
 
 $(function () {
-    var $copyIcon = $('<i class="fas fa-copy code_copy" title="复制代码" aria-hidden="true"></i>')
+    var $copyIcon = $('<i class="fas fa-copy code_copy" title="複製代碼" aria-hidden="true"></i>')
     var $notice = $('<div class="codecopy_notice"></div>')
     $('.code-area').prepend($copyIcon)
     $('.code-area').prepend($notice)
@@ -40,7 +40,7 @@ $(function () {
                 return false
             }
         } else {
-            $(ctx).prev('.codecopy_notice').text("浏览器不支持复制")
+            $(ctx).prev('.codecopy_notice').text("瀏覽器不支持複製")
         }
     }
     // 复制
