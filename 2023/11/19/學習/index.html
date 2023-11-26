@@ -1,0 +1,1233 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="蕭力誠 - 專業實習報告, 資策會實習網站">
+    <meta name="description" content="這篇主要是在講實習時學習到的事情，包含技術以及非技術">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>蕭力誠 - 專業實習報告 | 資策會實習網站</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">資策會實習網站</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首頁</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>標籤</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分類</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>文章</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>關於</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>聯絡</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">資策會實習網站</div>
+        <div class="logo-desc">
+            
+            rrrrrr
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首頁
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			標籤
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分類
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			文章
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			關於
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			聯絡
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">蕭力誠 - 專業實習報告</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                                <span class="chip bg-color">工作</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%AD%B8%E7%BF%92/" class="post-category">
+                                學習
+                            </a>
+                        
+                            <a href="/categories/%E5%AD%B8%E7%BF%92/%E5%B7%A5%E4%BD%9C/" class="post-category">
+                                工作
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2023-11-19
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="工作內容"><a href="#工作內容" class="headerlink" title="工作內容"></a>工作內容</h2><h3 id="工作環境介紹"><a href="#工作環境介紹" class="headerlink" title="工作環境介紹"></a>工作環境介紹</h3><ul>
+<li>上班時間:9a.m~6p.m</li>
+<li>使用硬體:筆記型電腦、螢幕</li>
+<li>使用軟體:virtualbox、mobelxtern、wireshark</li>
+<li>使用開放原始碼: FREE5GC、UERANSIM、5GREPLAY</li>
+<li>研究協議:ngap、sctp、gtp</li>
+</ul>
+<h3 id="工作詳述"><a href="#工作詳述" class="headerlink" title="工作詳述"></a>工作詳述</h3><p>了解5g的運作模適合架構，並利用5g模擬核網進行觀察，並嘗試進行如: D0S攻擊、MITM攻擊，並進行觀察和生成報告，<br>並且5G通訊過程中有需多協議(NGAP、GTP、DHCP…)、通道(N1、N2、N6..)、虛擬化硬體(AMF、UPF、SMF…)進行研究。
+ </p>
+<h3 id="實習期間完成的進度"><a href="#實習期間完成的進度" class="headerlink" title="實習期間完成的進度"></a>實習期間完成的進度</h3><p>(1)free5gc(核網)、UERANSIM(基地台、使用者)、5greplay(重放封包工具)虛擬機架設，並撰寫文件<br>(2)	5g核心架構、通道、協議的知識學習<br>(3)	5greplay程式碼研究<br>(4)	5greplay程式碼修改，增加可改動欄位<br>(5)	鑑別NGAP封包中可修改欄位和會對核心網路造成的影響<br>(6)	ut-lab進行dos後的封包流量分析<br>(7)	linux指令<br>(8)	撰寫bash檔、gitlab使用</p>
+<h3 id="期望從中學習到"><a href="#期望從中學習到" class="headerlink" title="期望從中學習到"></a>期望從中學習到</h3><p>(1)	5g相關知識，如:規範、架構<br>(2)	封包的流量監控和分析<br>(3)	封包協定和欄位<br>(4)	基本資安和網路知識<br>(5)	程式能力的提升<br>(6)	專案的參與</p>
+<h3 id="未來發展"><a href="#未來發展" class="headerlink" title="未來發展"></a>未來發展</h3><p>(1)	考取證照:cc、cissp、cpe<br>(2)	提高python、c++程式能力<br>(3)	加強資安軟體使用能力，如:nessus、owasp</p>
+<h2 id="初始研究"><a href="#初始研究" class="headerlink" title="初始研究"></a>初始研究</h2><h3 id="5g核心架構、通道、協議的知識學習"><a href="#5g核心架構、通道、協議的知識學習" class="headerlink" title="5g核心架構、通道、協議的知識學習"></a>5g核心架構、通道、協議的知識學習</h3><p><img src="https://i.imgur.com/VxkcP7A.jpg" alt="5g架構圖"></p>
+<ul>
+<li>以上為5g架構圖，可以看到5g由許多虛擬化容器組成其中虛線以上為核心網 路，其中包含</li>
+</ul>
+<ol>
+<li>AMF：Access and Mobility Management Function。負責為用戶存取時提 供認證、權限等。 </li>
+<li>SMF：Session Management Function。負責通話通道維護、IP分配和管理、UPF的選擇等。</li>
+<li>UPF：User plane Function。負責用戶封包的路由和轉發、與DN的交互、User plane的QoS處理、流量管控的實施等。</li>
+</ol>
+<p>在連網前UE會透過N1通道(UE-&gt;AMF)和N2通道(GNB-&gt;AMF)對AMF發起註冊請求以及安全驗證性，其通道進行SCTP連線，使用NAGP協議，發送NGSETUP、INITIALUEMESSAGE等封包，其中包含PLMN、IMSI、TAC、GUTI(UE 的臨時識別證)等值，使AMF能夠註冊成功。</p>
+<p>一旦註冊成功，SMF會將消息發給UPF，建立N3通道，使用GTP協議，使UE能夠連上DN(DATA NETWORK)，其中規範皆按照3GPP規範執行，而我住要研究的部分為N1、N2、N6這三個通道，並嘗試可能的攻擊方案，如DOS、MITM、REPLAY等攻擊方式，並產生相關報表。</p>
+<p>當然，5GC還有許多可以研究的地方,如AKA(5G加密)、PLMN的註冊方式等</p>
+<h3 id="NGAP封包"><a href="#NGAP封包" class="headerlink" title="NGAP封包"></a>NGAP封包</h3><p><img src="https://i.imgur.com/w7Z88Cc.jpg" alt="N2封包"><br><img src="https://i.imgur.com/PbJB8tb.jpg" alt="N1封包"></p>
+<h3 id="5greplay程式碼研究"><a href="#5greplay程式碼研究" class="headerlink" title="5greplay程式碼研究"></a>5greplay程式碼研究</h3><p>5greplay為專為5g開發的重放封包工具，藉由修改NGAP欄位，如:Peocedure_code、AMF_UE_ID、RAN_UE_ID等欄位後進行重放，來對AMF造成影響。</p>
+<p><img src="https://i.imgur.com/8MLdPAq.jpg" alt="5greplay程式流程圖(部分)"><br><img src="https://i.imgur.com/PzOHjFT.jpg" alt="修改前後流程"></p>
+<h2 id="5greplay程式碼修改，增加可改動欄位"><a href="#5greplay程式碼修改，增加可改動欄位" class="headerlink" title="5greplay程式碼修改，增加可改動欄位"></a>5greplay程式碼修改，增加可改動欄位</h2><h3 id="5greplay替換mmt-dpi-deb"><a href="#5greplay替換mmt-dpi-deb" class="headerlink" title="5greplay替換mmt-dpi.deb"></a>5greplay替換mmt-dpi.deb</h3><p>Mmt-dpi為5greplay同公司一研發的函式庫，在5greplay中，負責修改ngap封包欄位的函式: update_ngap_data便是在mmt-dpi中。 因此如果需要對修改ngap函式做更動，需另外修改mmt-dpi，更動完後做成deb檔去安裝。</p>
+<h3 id="修改概略"><a href="#修改概略" class="headerlink" title="修改概略"></a>修改概略</h3><ul>
+<li>在replay.c新增兩變數char  proto_att_id[50]、int  new_val_num 來接收-s –v 數值</li>
+<li>在message_t結構中新增兩變數Char ngap_proto_id[50]、Int new_val ，將proto_att_id、new_val_num 放入，與封包一同傳送到rule</li>
+<li>rule檔中用if、if else來判斷輸入的ngap_proto_id為預設中5個哪一個，確認後傳入mmt-dpi</li>
+<li>mmt-dpi中define NGAP_UEMESSAGE_5GEA0為5， NGAP_ATT_PROCEDURE_CODE為1</li>
+<li>update_ngap_data的switch中，增加NGAP_UEMESSAGE_5GEA0的case</li>
+</ul>
+<h3 id="新增指令"><a href="#新增指令" class="headerlink" title="新增指令"></a>新增指令</h3><ul>
+<li>-s(set) &lt;欲修改欄位&gt;</li>
+</ul>
+<div class="note default"><table>
+<thead>
+<tr>
+<th>-s 修改欄位</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NGAP_ATT_PROCEDURE_CODE</td>
+<td>修改封包procedure code</td>
+</tr>
+<tr>
+<td>NGAP_ATT_PDU_PRESENT</td>
+<td>修改PDU_PRESENT&#x2F;&#x2F;EX:initiatingMessage</td>
+</tr>
+<tr>
+<td>NGAP_ATT_RAN_UE_ID</td>
+<td>修改封包RAN-UE-NGAP-ID</td>
+</tr>
+<tr>
+<td>NGAP_ATT_AMF_UE_ID</td>
+<td>修改封包AMF-UE-NGAP-ID</td>
+</tr>
+<tr>
+<td>NGAP_USMESSAGE_5GEA0</td>
+<td>修改INITUEMESSAGE封包的5GEA0</td>
+</tr>
+</tbody></table>
+</div>
+
+<ul>
+<li>-v(value) &lt;欲將欄位修改成的數值&gt;</li>
+</ul>
+<div class="note default"><table>
+<thead>
+<tr>
+<th>-s 修改欄位</th>
+<th>-t 可修改範圍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NGAP_ATT_PDU_PRESENT</td>
+<td>0(initiatingMessage)、1(successfulOutcome)、2(unsuccessfulOutcome)</td>
+</tr>
+<tr>
+<td>NGAP_ATT_RAN_UE_ID</td>
+<td>0(00 00) ~ 65535(FF FF)</td>
+</tr>
+<tr>
+<td>NGAP_ATT_AMF_UE_ID</td>
+<td>0(00 00) ~ 65535(FF FF)</td>
+</tr>
+<tr>
+<td>NGAP_USMESSAGE_5GEA0</td>
+<td>0(not support 5G-EA0)、1(support 5G-EA0)</td>
+</tr>
+</tbody></table>
+</div>
+
+<h3 id="鑑別NGAP封包中可修改欄位和DOS會對核心網路造成的影響"><a href="#鑑別NGAP封包中可修改欄位和DOS會對核心網路造成的影響" class="headerlink" title="鑑別NGAP封包中可修改欄位和DOS會對核心網路造成的影響"></a>鑑別NGAP封包中可修改欄位和DOS會對核心網路造成的影響</h3><p>5g核網在註冊時需要驗證許多欄位，如:plmn、guti等等，而不同核網的驗證標準也不一樣，透過重放修改欄位的封包，可以觀察到核網有確實對哪些欄位進行驗證，或錯誤的資料是否會對核網造成問題:</p>
+<p><img src="https://i.imgur.com/9UG5UMe.jpg" alt="核網記憶體錯誤"><br><img src="https://i.imgur.com/KOO8EP9.jpg" alt="修改封包中security_header_type(負責對封包加密和完整性保護)會被核網拒絕註冊"><br><img src="https://i.imgur.com/G6ff75C.jpg" alt="修改封包中5G-EA0(支援加密演算法)也會被核網拒絕註冊"><br><img src="https://i.imgur.com/LmAL6pB.jpg"><br><img src="https://i.imgur.com/YGhSIPt.jpg" alt="也有修改後不會對核網造成影響的欄位AMF_UE_ID、RAN_UE_ID(GNB和AMF標記UE的標示符)"><br><img src="https://i.imgur.com/951raYU.jpg" alt="對核網做DOS攻擊"></p>
+<p>從圖片可以了解，當每秒封包數達到2000時，核網會出現延遲，並且不再處理封包，觸發封包sack_retransmission機制</p>
+<p><img src="https://i.imgur.com/45dHPmK.jpg" alt="SCTP Retransmission"></p>
+<h2 id="linux指令、撰寫bash檔"><a href="#linux指令、撰寫bash檔" class="headerlink" title="linux指令、撰寫bash檔"></a>linux指令、撰寫bash檔</h2><h3 id="1-由於相關5g虛擬機作業都需要在linux系統上操作，因此需要去學習linux相關的指令"><a href="#1-由於相關5g虛擬機作業都需要在linux系統上操作，因此需要去學習linux相關的指令" class="headerlink" title="1. 由於相關5g虛擬機作業都需要在linux系統上操作，因此需要去學習linux相關的指令"></a>1. 由於相關5g虛擬機作業都需要在linux系統上操作，因此需要去學習linux相關的指令</h3><figure class="highlight bash"><figcaption><span>指定路徑</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> [file]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>列出目錄</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">ls</span> -a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>遠端連線</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh [account]@[ip]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>虛擬機間傳送檔案</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ scp [account]@[ip1]:[dir1]/[file1] [dir2]</span><br><span class="line">$ scp [dir2] [account]@[ip2]:[dir1]/[file1]  </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>移動</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mv</span> [dir1]/[file1] [dir2]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>印出檔案</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cat</span> [file] 搭配 |less |more |<span class="built_in">head</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>關鍵字搜索</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ grep ex : <span class="built_in">cat</span> [file] | grep [key]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>建立檔案</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">touch</span> [filename]</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-撰寫bash檔"><a href="#2-撰寫bash檔" class="headerlink" title="2. 撰寫bash檔"></a>2. 撰寫bash檔</h3><figure class="highlight bash"><figcaption><span>if 條件式</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> []; <span class="keyword">then</span> <span class="keyword">fi</span> </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>大於、小於、相同</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-gt -lt -eq</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>if while 迴圈</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span></span><br><span class="line"><span class="keyword">do</span> </span><br><span class="line">    ...</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>for 迴圈</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> [item] <span class="keyword">in</span> [items]</span><br><span class="line"><span class="keyword">do</span> </span><br><span class="line">    ...</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>case</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> </span><br><span class="line"> a);; </span><br><span class="line"> b);; </span><br><span class="line"><span class="keyword">esac</span> </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>第一位參數往左移</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ -<span class="comment">#0 shift</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-GTP-N3-封包測試"><a href="#3-GTP-N3-封包測試" class="headerlink" title="3. GTP(N3)封包測試"></a>3. GTP(N3)封包測試</h3><p>從今年資安大會對5g趨勢來看，最近傾向於攻擊核網的UPF(負責轉發封包)<br>測試過程:<br>free5gc與UERANSIM連線後，會透過uesimtun0網卡連線DN(192.168.0.95)，192.168.0.95只能透過uesimtun0連線，其餘主機無法PING，成功連線候用UERANSIM ping 192.168.0.95並錄製，獲取gtp封包，回到5greplay主機，使用scp獲取封包檔案後，用tcpreplay和5greplay重放。</p>
+<p><img src="https://i.imgur.com/Ivph698.jpg" alt="圖解"></p>
+<p>ip:</p>
+<ul>
+<li>UE:10.60.0.1</li>
+<li>N2:192.168.61.112</li>
+<li>N3:192.168.62.112</li>
+<li>DN:192.168.0.95</li>
+</ul>
+<h3 id="4-測試結果"><a href="#4-測試結果" class="headerlink" title="4. 測試結果"></a>4. 測試結果</h3><p><img src="https://i.imgur.com/DkzCLVF.jpg" alt="tcpreplay成功發送封包"><br><img src="https://i.imgur.com/eueqJaE.jpg" alt="free5gc成功接收封包並轉發給DN，DN也正常回覆icmp封包"><br><img src="https://i.imgur.com/DLvzRtu.jpg" alt="UERANSIM成功接收到DN的回傳封包"></p>
+<p>由於free5gc的UPF是透過gtp連線，因此config檔需改為UDP連線:</p>
+<ul>
+<li>target-protocols 	&#x3D; { SCTP, UDP}</li>
+<li>target-hosts    	&#x3D; {“192.168.61.102”, “192.168.62.102”}</li>
+<li>target-ports  	&#x3D; { 38412, 2152}</li>
+</ul>
+<p><img src="https://i.imgur.com/Y2wSxlT.jpg" alt="5Greplay重放"><br><img src="https://i.imgur.com/fPCe9qA.jpg" alt="ens224(N3)"><br><img src="https://i.imgur.com/3MLKzR8.jpg" alt="DN(192.168.0.95)"><br><img src="https://i.imgur.com/osac7Gn.jpg" alt="GNB(192.168.61.113)"><br><img src="https://i.imgur.com/CcNU9ew.jpg" alt="UE(10.60.0.1)"></p>
+<h3 id="5-NRPPA初步解說"><a href="#5-NRPPA初步解說" class="headerlink" title="5. NRPPA初步解說"></a>5. NRPPA初步解說</h3><p>NGPPA為5G中(GNB&lt;-&gt;AMF)(AMF&lt;-&gt;LMF)通訊協議，用於定位用戶位置，透過下行線路(DOWNLINK)和上行線路(UPLINK)中的參考信號(PRS、SRS)，偵測用戶位置</p>
+<p><img src="https://i.imgur.com/I8VZfgp.jpg"></p>
+<p>可能可用於竄改位置</p>
+<ul>
+<li>不同核網可能使用不同偵測方式，主要有三種:<ol>
+<li>   DL-only：DL TDOA和DL AoD</li>
+<li>   UL-only：UL TDOA和UL AoA</li>
+<li>   Multi-RTT</li>
+</ol>
+</li>
+<li>下行到達時差(DL-TDOA):</li>
+</ul>
+<p>定位參考信號(PRS)的參考信號，用於UE對每個基站的PRS執行下行參考信號時差(DL RSTD)測量。這些測量結果將報告給位置服務器</p>
+<p><img src="https://i.imgur.com/kioFDsT.jpg"></p>
+<p>RPS由GNB中RRC協議傳輸</p>
+<ul>
+<li>上行到達時差(UL-TDOA):<br>  與下行到達時間差相反，上行到達時差為UE發出訊號</li>
+<li>下行偏离角(DL AoD):<br>  測量報告用於根據每個gNB的UE波束位置確定AoD。 然後，位置伺服器使用AoD來估計UE的位置。参考信号接收功率<br>  <img src="https://i.imgur.com/6r8lequ.jpg"></li>
+</ul>
+<h2 id="暑期實習期間完成工作"><a href="#暑期實習期間完成工作" class="headerlink" title="暑期實習期間完成工作"></a>暑期實習期間完成工作</h2><h3 id="1-5g實際場域布置"><a href="#1-5g實際場域布置" class="headerlink" title="1. 5g實際場域布置"></a>1. 5g實際場域布置</h3><p>初始5g測試都是在本機電腦中虛擬機做相關測試，當然，並沒有說不好，但需要實際的場域驗證實，可能會因為環境的差異而導致錯誤的結果，而由於這次公司需要參展的緣故，因此幫忙布置完整的5g場域，從開始的USER、RAN、核心網路，以及串流所需要的SERVER。<br>完整場域示意圖 :</p>
+<p><img src="https://i.imgur.com/VaI5sEn.jpg"></p>
+<p>學習到的相關技術:<br>1.	streaming server的架設與其相關的使用協議<br>    - wowza的使用與設定<br>    - obs中影像位元率對整體直播的影響<br>    - 防火牆的規則新增<br>2.	網段與環境硬體的規劃與設定<br>    - Switch、AP的設定<br>    - 整體環境結構規劃</p>
+<h3 id="2-實際場域相關攻擊"><a href="#2-實際場域相關攻擊" class="headerlink" title="2. 實際場域相關攻擊"></a>2. 實際場域相關攻擊</h3><p>在實際公司場域進行攻擊測試，來查看是否有漏洞，以及封包<br>是否合規等等，實際場域環境:<img src="https://i.imgur.com/lhhJ88q.jpg" alt="實際場域核心網路"><br><img src="https://i.imgur.com/0iwstKc.jpg"></p>
+<ol>
+<li>   ARP spoofing </li>
+<li>   DOS</li>
+<li>   Fuzzzing</li>
+</ol>
+<p>結果 :</p>
+<div class="note default"><table>
+<thead>
+<tr>
+<th>測試項目</th>
+<th>使用工具</th>
+<th>使用原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>網路端口服務檢測</td>
+<td>nmap</td>
+<td>檢查主機開啟哪些服務，得知服務內容與版本，可對相關服務進行攻擊</td>
+</tr>
+<tr>
+<td>掃描 SSL&#x2F;TLS 伺服器的支援協議版本</td>
+<td>sslscan</td>
+<td>評估主機加密套件的安全性</td>
+</tr>
+<tr>
+<td>系統弱點掃描分析</td>
+<td>nessus</td>
+<td>對主機做弱點掃描分析</td>
+</tr>
+<tr>
+<td>資料庫分析</td>
+<td>sqlmap</td>
+<td>測試是否有 sql injection 漏洞</td>
+</tr>
+<tr>
+<td>暴力破解密碼</td>
+<td>hydra</td>
+<td>是否有使用過於簡單的密碼規則</td>
+</tr>
+<tr>
+<td>檢查網站伺服器漏洞</td>
+<td>nikto</td>
+<td>檢查網站伺服器是否有過時的套件或漏洞</td>
+</tr>
+<tr>
+<td>檢查網站伺服器漏洞</td>
+<td>0WASP ZAP</td>
+<td>檢查網站伺服器是否有過時的套件或漏洞</td>
+</tr>
+</tbody></table>
+</div>
+
+<h3 id="3-應用端攻擊練習"><a href="#3-應用端攻擊練習" class="headerlink" title="3. 應用端攻擊練習"></a>3. 應用端攻擊練習</h3><p>使用工具</p>
+<div class="note default"><table>
+<thead>
+<tr>
+<th>測試項目</th>
+<th>測試結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>N3 call N6 DOS (TIE情境1)</td>
+<td>UE 播放影片中斷</td>
+</tr>
+<tr>
+<td>N2 &#x2F; N3 ARP (TIE情境2)</td>
+<td>UE 播放影片中斷</td>
+</tr>
+<tr>
+<td>N2 Fuzz 生成封包 (TIE情境3)</td>
+<td>沒有影響</td>
+</tr>
+<tr>
+<td>N3 DOS 5gc &#x2F; gNB</td>
+<td>沒有影響</td>
+</tr>
+<tr>
+<td>N3攻擊機 ping CPE &#x2F; UE</td>
+<td>理論上不行，但ping成功。因場域有設定 route，UPF將封包包成 GTP 轉發</td>
+</tr>
+<tr>
+<td>N6攻擊機 ping CPE</td>
+<td>理論上不行，但ping成功。在場域因為有設定 route。</td>
+</tr>
+</tbody></table>
+</div>
+
+<h3 id="4-暑期實習間感想"><a href="#4-暑期實習間感想" class="headerlink" title="4. 暑期實習間感想"></a>4. 暑期實習間感想</h3><h5 id="到進入公司為止，已經過了半年，對於所做的事已逐漸嫻熟於心，對我而言，這條路絕對一場挑戰，但也是一次難得的學習機會，因緣際會進入了資安合5g這個領域，重開始的懵懂無知，到如今也能和別人討論的上一些技術相關的知識，並且看懂5g-協議的規格書，對我自己來講也是個很大的突破，當然我也很感激我的主管和同事，當我遇到難題時，他們總是樂於分享他們的經驗，並給予我鼓勵。這讓我認識到團隊合作的重要性，這段工作中，讓我明白需要在這條路上持續走下去，還有更多需要學習的東西。"><a href="#到進入公司為止，已經過了半年，對於所做的事已逐漸嫻熟於心，對我而言，這條路絕對一場挑戰，但也是一次難得的學習機會，因緣際會進入了資安合5g這個領域，重開始的懵懂無知，到如今也能和別人討論的上一些技術相關的知識，並且看懂5g-協議的規格書，對我自己來講也是個很大的突破，當然我也很感激我的主管和同事，當我遇到難題時，他們總是樂於分享他們的經驗，並給予我鼓勵。這讓我認識到團隊合作的重要性，這段工作中，讓我明白需要在這條路上持續走下去，還有更多需要學習的東西。" class="headerlink" title="到進入公司為止，已經過了半年，對於所做的事已逐漸嫻熟於心，對我而言，這條路絕對一場挑戰，但也是一次難得的學習機會，因緣際會進入了資安合5g這個領域，重開始的懵懂無知，到如今也能和別人討論的上一些技術相關的知識，並且看懂5g 協議的規格書，對我自己來講也是個很大的突破，當然我也很感激我的主管和同事，當我遇到難題時，他們總是樂於分享他們的經驗，並給予我鼓勵。這讓我認識到團隊合作的重要性，這段工作中，讓我明白需要在這條路上持續走下去，還有更多需要學習的東西。"></a>到進入公司為止，已經過了半年，對於所做的事已逐漸嫻熟於心，對我而言，這條路絕對一場挑戰，但也是一次難得的學習機會，因緣際會進入了資安合5g這個領域，重開始的懵懂無知，到如今也能和別人討論的上一些技術相關的知識，並且看懂5g 協議的規格書，對我自己來講也是個很大的突破，當然我也很感激我的主管和同事，當我遇到難題時，他們總是樂於分享他們的經驗，並給予我鼓勵。這讓我認識到團隊合作的重要性，這段工作中，讓我明白需要在這條路上持續走下去，還有更多需要學習的東西。</h5><h2 id="自我評估及心得感想"><a href="#自我評估及心得感想" class="headerlink" title="自我評估及心得感想"></a>自我評估及心得感想</h2><h5 id="對我而言，為期一年的實習經驗是十分寶貴的，從前雖然在餐廳打工過，但這是我第一次踏入相關業界，對於我而言，這是一次學習的機會也是確定我未來發展方向的轉折點，在實習前，其實已經有做好心理建設，但到了之後才發現，自己以前學習的東西十分淺薄，很多事情都要從頭學起的，甚至有其他人只比你大一些，卻擁有豐富的經驗和實力，並且職場上的東西和學校也有很大的差別，需要網路查閱許多文件，也需要實際去操作，實習的開始也讓我開始了解自我學習的重要性，工作時你並沒有很多時間去學習，因此必須要趁其他時間去了解更多東西，才能快速的適應手上的工作，我認為我的學習速度不算太快，5g相關文件不算太多，有些還需要用英文去查，虛擬機的操作，封包的使用都要自己去學習，沒有人會像老師一樣慢慢指導你，但也如此，能夠學習到各方面的知識，如網路通訊、c語言的編成、linux的環境等等。"><a href="#對我而言，為期一年的實習經驗是十分寶貴的，從前雖然在餐廳打工過，但這是我第一次踏入相關業界，對於我而言，這是一次學習的機會也是確定我未來發展方向的轉折點，在實習前，其實已經有做好心理建設，但到了之後才發現，自己以前學習的東西十分淺薄，很多事情都要從頭學起的，甚至有其他人只比你大一些，卻擁有豐富的經驗和實力，並且職場上的東西和學校也有很大的差別，需要網路查閱許多文件，也需要實際去操作，實習的開始也讓我開始了解自我學習的重要性，工作時你並沒有很多時間去學習，因此必須要趁其他時間去了解更多東西，才能快速的適應手上的工作，我認為我的學習速度不算太快，5g相關文件不算太多，有些還需要用英文去查，虛擬機的操作，封包的使用都要自己去學習，沒有人會像老師一樣慢慢指導你，但也如此，能夠學習到各方面的知識，如網路通訊、c語言的編成、linux的環境等等。" class="headerlink" title="對我而言，為期一年的實習經驗是十分寶貴的，從前雖然在餐廳打工過，但這是我第一次踏入相關業界，對於我而言，這是一次學習的機會也是確定我未來發展方向的轉折點，在實習前，其實已經有做好心理建設，但到了之後才發現，自己以前學習的東西十分淺薄，很多事情都要從頭學起的，甚至有其他人只比你大一些，卻擁有豐富的經驗和實力，並且職場上的東西和學校也有很大的差別，需要網路查閱許多文件，也需要實際去操作，實習的開始也讓我開始了解自我學習的重要性，工作時你並沒有很多時間去學習，因此必須要趁其他時間去了解更多東西，才能快速的適應手上的工作，我認為我的學習速度不算太快，5g相關文件不算太多，有些還需要用英文去查，虛擬機的操作，封包的使用都要自己去學習，沒有人會像老師一樣慢慢指導你，但也如此，能夠學習到各方面的知識，如網路通訊、c語言的編成、linux的環境等等。"></a>對我而言，為期一年的實習經驗是十分寶貴的，從前雖然在餐廳打工過，但這是我第一次踏入相關業界，對於我而言，這是一次學習的機會也是確定我未來發展方向的轉折點，在實習前，其實已經有做好心理建設，但到了之後才發現，自己以前學習的東西十分淺薄，很多事情都要從頭學起的，甚至有其他人只比你大一些，卻擁有豐富的經驗和實力，並且職場上的東西和學校也有很大的差別，需要網路查閱許多文件，也需要實際去操作，實習的開始也讓我開始了解自我學習的重要性，工作時你並沒有很多時間去學習，因此必須要趁其他時間去了解更多東西，才能快速的適應手上的工作，我認為我的學習速度不算太快，5g相關文件不算太多，有些還需要用英文去查，虛擬機的操作，封包的使用都要自己去學習，沒有人會像老師一樣慢慢指導你，但也如此，能夠學習到各方面的知識，如網路通訊、c語言的編成、linux的環境等等。</h5><h5 id="5g為近幾年開始出現的通訊網路，雖然其架構已經很完整，但至今為止，其規範3GPP仍在持續增加，就之前發生的5g資安問題，如：驗證程序的紕漏、虛擬化硬體容易招受到dos攻擊等，5g的資安需求沒有如網頁資安-、工控資安那麼普及，但仍是十分重要，因此能夠完整的學習好5g相關知識，能夠對5g的資安能力，有進一步的強化"><a href="#5g為近幾年開始出現的通訊網路，雖然其架構已經很完整，但至今為止，其規範3GPP仍在持續增加，就之前發生的5g資安問題，如：驗證程序的紕漏、虛擬化硬體容易招受到dos攻擊等，5g的資安需求沒有如網頁資安-、工控資安那麼普及，但仍是十分重要，因此能夠完整的學習好5g相關知識，能夠對5g的資安能力，有進一步的強化" class="headerlink" title="5g為近幾年開始出現的通訊網路，雖然其架構已經很完整，但至今為止，其規範3GPP仍在持續增加，就之前發生的5g資安問題，如：驗證程序的紕漏、虛擬化硬體容易招受到dos攻擊等，5g的資安需求沒有如網頁資安 、工控資安那麼普及，但仍是十分重要，因此能夠完整的學習好5g相關知識，能夠對5g的資安能力，有進一步的強化"></a>5g為近幾年開始出現的通訊網路，雖然其架構已經很完整，但至今為止，其規範3GPP仍在持續增加，就之前發生的5g資安問題，如：驗證程序的紕漏、虛擬化硬體容易招受到dos攻擊等，5g的資安需求沒有如網頁資安 、工控資安那麼普及，但仍是十分重要，因此能夠完整的學習好5g相關知識，能夠對5g的資安能力，有進一步的強化</h5>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">蕭力誠</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2023/11/19/%E5%AD%B8%E7%BF%92/">http://example.com/2023/11/19/%E5%AD%B8%E7%BF%92/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">蕭力誠</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                                    <span class="chip bg-color">工作</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2023/11/19/%E5%AD%B8%E7%BF%92/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="蕭力誠 - 專業實習報告">
+                        
+                        <span class="card-title">蕭力誠 - 專業實習報告</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            這篇主要是在講實習時學習到的事情，包含技術以及非技術
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%B8%E7%BF%92/" class="post-category">
+                                    學習
+                                </a>
+                            
+                            <a href="/categories/%E5%AD%B8%E7%BF%92/%E5%B7%A5%E4%BD%9C/" class="post-category">
+                                    工作
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                        <span class="chip bg-color">工作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/11/18/1091639/">
+                    <div class="card-image">
+                        
+                        <img src="https://i.imgur.com/qfXFx2o.jpg" class="responsive-img" alt="蘇柏翰 - 專業實習報告">
+                        
+                        <span class="card-title">蘇柏翰 - 專業實習報告</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            蘇柏翰
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <a href="/about" target="_blank">蕭力誠</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="訪問我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="電子郵件" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
